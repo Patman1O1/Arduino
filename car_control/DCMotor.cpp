@@ -9,8 +9,6 @@ namespace arduino {
   DCMotor::DCMotor(const AnalogPin& analogPin) noexcept : analogPin(analogPin) {}
 
   DCMotor::DCMotor(AnalogPin&& analogPin) noexcept : analogPin(analogPin) {}
-
-  /* ----------------------------------------------Overloaded Operators------------------------------------------- */
   
   /* ----------------------------------------------------Setters-------------------------------------------------- */
   void DCMotor::setAnalogPin(const AnalogPin& analogPin) noexcept {this->analogPin = analogPin; }
@@ -29,6 +27,7 @@ namespace arduino {
   }
 
 } // namespace arduino
+
 
 
 
