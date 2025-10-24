@@ -35,6 +35,8 @@ namespace arduino {
 
     ControlStick& operator=(ControlStick&&) noexcept = default;
 
+    [[nodiscard]] explicit operator bool(void) const noexcept;
+
     /* ------------------------------------------------Setters----------------------------------------------- */
     void setVrxPin(const AnalogPin& vrxPin) noexcept;
 
