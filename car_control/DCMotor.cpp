@@ -17,7 +17,11 @@ namespace arduino {
 
   void DCMotor::setAnalogPin(AnalogPin&& analogPin) noexcept { this->analogPin = analogPin; }
 
-  /* ----------------------------------------------------Methods-------------------------------------------------- */
-  
+  /* ----------------------------------------------------Getters-------------------------------------------------- */
+  // TODO
+  [[nodiscard]] std::uint32_t DCMotor::getRPMs(void) const noexcept {
+      return 0;
+  }
 
 } // namespace arduino
+
