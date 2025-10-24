@@ -19,9 +19,10 @@ namespace arduino {
 
   /* ----------------------------------------------------Getters-------------------------------------------------- */
   // TODO
-  [[nodiscard]] std::uint32_t DCMotor::getRPMs(void) const noexcept {
+  [[nodiscard]] std::uint32_t DCMotor::getRPM(void) const noexcept {
       return 0;
   }
 
 } // namespace arduino
+
 
