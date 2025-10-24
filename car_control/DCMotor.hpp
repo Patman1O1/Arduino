@@ -37,9 +37,12 @@ namespace arduino {
 
 		void setAnalogPin(AnalogPin&& analogPin) noexcept;
 
-		/* ------------------------------------------------Getters-------------------------------------------------- */
-		[[nodiscard]] std::uint32_t getRPM(void) const noexcept;
+		void setSpeed(std::uint32_t speed) noexcept;
 
+		/* ------------------------------------------------Getters-------------------------------------------------- */
+		[[nodiscard]] std::uint32_t getSpeed(void) const noexcept;
+
+		/* ------------------------------------------------Methods-------------------------------------------------- */
 	};
 
 } // namespace arduino
