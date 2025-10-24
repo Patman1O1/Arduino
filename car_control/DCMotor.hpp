@@ -32,6 +32,11 @@ namespace arduino {
 
 		DCMotor& operator=(DCMotor&&) noexcept = default;
 
+		/* ------------------------------------------------Setters-------------------------------------------------- */
+		void setAnalogPin(const AnalogPin& analogPin) noexcept;
+
+		void setAnalogPin(AnalogPin&& analogPin) noexcept;
+
 		/* ------------------------------------------------Methods-------------------------------------------------- */
 		[[nodiscard]] std::uint32_t getRPM(void) const noexcept;
 
