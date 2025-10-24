@@ -2,6 +2,7 @@
 #define DC_MOTOR_HPP
 
 #include <cstddef>
+#include <cstdint>
 
 #include "AnalogPin.hpp"
 
@@ -12,6 +13,7 @@ namespace arduino {
 		AnalogPin analogPin;
 
 	public:
+		/* ----------------------------------------------Constructors----------------------------------------------- */
 		DCMotor(void) noexcept;
 
 		DCMotor(const AnalogPin& analogPin) noexcept;
@@ -22,12 +24,15 @@ namespace arduino {
 
 		DCMotor(DCMotor&&) noexcept = default;
 
+		/* -----------------------------------------------Destructor------------------------------------------------ */
 		~DCMotor() noexcept = default;
 
+		/* ------------------------------------------Overloaded Operators------------------------------------------- */
 		DCMotor& operator=(const DCMotor&) noexcept = default;
 
 		DCMotor& operator=(DCMotor&&) noexcept = default;
 
+		/* ------------------------------------------------Methods-------------------------------------------------- */
 		[[nodiscard]] std::uint32_t getRPM(void) const noexcept;
 
 	};
